@@ -53,5 +53,6 @@
     "_stream_duplex": "readable-stream/duplex",
     "_stream_passthrough": "readable-stream/passthrough",
     "stream": "stream-browserify"
-  }
+  },
+  "homepage": "https://github.com/ISHABACHARYA/react-native-btc-eth-wallet"
 }
