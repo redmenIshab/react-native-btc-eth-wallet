@@ -1,4 +1,7 @@
 It implements ethers.js and bitcoinjs-lib node library by hack to implement it into react-native.
+              **To install**
+          
+          npm i react-native-btc-eth-wallet
 
 It contains features :
 
@@ -6,7 +9,6 @@ It contains features :
                 2. Bitcoin wallet address generation,
                 3. Etherium wallet address generation.
 
-        npm i react-native-btc-eth-wallet
 
 Ways to use:
 
