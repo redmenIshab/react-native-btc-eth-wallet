@@ -25,7 +25,7 @@ export function createBitcoinWallet({ mnemonics }) {
   const keyPair = bitcoin.ECPair.fromWIF(WIF, bitcoin.networks["mainnet"]);
   const { address } = bitcoin.payments.p2pkh({
     pubkey: keyPair.publicKey,
-    network: bitcoin.networks["mainnet"]
+    network: bitcoin.networks["mainnet"],
   });
   console.log("the address of the wallet is", address);
   return address;
@@ -34,5 +34,6 @@ export function createBitcoinWallet({ mnemonics }) {
 export function mnemnicGen() {
   const mnemonics = HDNode.entropyToMnemonic(utils.randomBytes(16));
   console.log("mnemnics generated ", mnemonics);
-  return mnemonics;
+  let passphrase = "test1";
+  return { mnemonics, passphrase };
 }
